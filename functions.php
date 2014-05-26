@@ -78,7 +78,6 @@ function top_hero_area(){
 			;genesis_widget_area( 'top-hero' );
 			echo '</div>';
 			echo '</div>';
-			echo '<div class="site-container">';
 }
 }
 
@@ -154,46 +153,46 @@ return $post_info;
 //* Customize the entry meta in the entry footer (requires HTML5 theme support)
 add_filter( 'genesis_post_meta', 'sp_post_meta_filter' );
 function sp_post_meta_filter($post_meta) {
-$post_meta = '[post_comments] [post_share]';
+$post_meta = '[post_comments]';
 return $post_meta;
 }
 
-// Create shortcode for Post Info sharing icons
-function post_share_shortcode() {
-if (!is_page()) {
- $permalink = get_permalink();
- $datatext = get_the_title();
- $share_buttons = '
+// // Create shortcode for Post Info sharing icons
+// function post_share_shortcode() {
+// if (!is_page()) {
+//  $permalink = get_permalink();
+//  $datatext = get_the_title();
+//  $share_buttons = '
  
-<div class="all-buttons">
- <!-- Facebook Like Button -->
- <div class="fb-like" href="'.$permalink.'"
- data-send="false" data-layout="button_count"
- data-width="90" data-show-faces="false" data-font="arial">
- </div>
+// <div class="all-buttons">
+//  <!-- Facebook Like Button -->
+//  <div class="fb-like" href="'.$permalink.'"
+//  data-send="false" data-layout="button_count"
+//  data-width="90" data-show-faces="false" data-font="arial">
+//  </div>
  
-<!-- Google +1 Button -->
- <div class="plusone">
- <g:plusone size="medium" href="'.$permalink.'">
- </g:plusone>
- </div>
+// <!-- Google +1 Button -->
+//  <div class="plusone">
+//  <g:plusone size="medium" href="'.$permalink.'">
+//  </g:plusone>
+//  </div>
  
-<!-- Tweet Button -->
- <div class="tweet">
- <a href="https://twitter.com/share" class="twitter-share-button"
- data-url="'.$permalink.'" data-text="'.$datatext.'">Tweet</a>
- </div>
+// <!-- Tweet Button -->
+//  <div class="tweet">
+//  <a href="https://twitter.com/share" class="twitter-share-button"
+//  data-url="'.$permalink.'" data-text="'.$datatext.'">Tweet</a>
+//  </div>
  
-<!-- Pinterest Button -->
-<div class="pinterest-button">
- <a href="http://pinterest.com/pin/create/button/?url=%s&media=%s"
- class="pin-it-button" count-layout="horizontal">Pin It</a>
-</div>
- </div>
- </div>
+// <!-- Pinterest Button -->
+// <div class="pinterest-button">
+//  <a href="http://pinterest.com/pin/create/button/?url=%s&media=%s"
+//  class="pin-it-button" count-layout="horizontal">Pin It</a>
+// </div>
+//  </div>
 
-';
+
+// ';
  
-return $share_buttons;
-}}
-add_shortcode('post_share', 'post_share_shortcode');
+// return $share_buttons;
+// }}
+// add_shortcode('post_share', 'post_share_shortcode');

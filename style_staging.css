@@ -70,7 +70,7 @@ HTML5 Reset
 	normalize.css v2.1.2 | MIT License | git.io/normalize
 --------------------------------------------- */
 
-article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:none}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
 
 /* Box Sizing
 --------------------------------------------- */
@@ -177,6 +177,7 @@ a img {
 
 a:hover {
 	color: #333;
+	border-bottom:none;
 }
 
 p {
@@ -235,7 +236,7 @@ h4,
 h5,
 h6 {
 	color: #333;
-	font-family: Lato, sans-serif;
+	font-family: 'Raleway';
 	font-weight: 700;
 	line-height: 1.2;
 	margin: 0 0 16px;
@@ -282,6 +283,7 @@ object,
 video,
 .wp-caption {
 	max-width: 100%;
+	margin-top: 20px;
 }
 
 img {
@@ -297,8 +299,6 @@ select,
 textarea {
 	background-color: #fff;
 	border: 1px solid #ddd;
-	border-radius: 3px;
-	box-shadow: 1px 1px 3px #eee inset;
 	color: #999;
 	font-size: 14px;
 	font-size: 1.4rem;
@@ -328,15 +328,15 @@ input[type="reset"],
 input[type="submit"],
 .button,
 .entry-content .button {
-	background-color: #333;
+	background-color: #c51522;
 	border: none;
 	box-shadow: none;
 	color: #fff;
 	cursor: pointer;
-	padding: 16px 24px;
-	padding: 1.6rem 2.4rem;
-	text-transform: uppercase;
+	padding: 10px 21px;
+	padding: 1rem 2.1rem;
 	width: auto;
+	font-family: 'Raleway';
 }
 
 button:hover,
@@ -375,7 +375,7 @@ table {
 }
 
 tbody {
-	border-bottom: 1px solid #e30a17;
+	border-bottom: 1px solid #c51623;
 }
 
 th,
@@ -389,7 +389,7 @@ th {
 }
 
 td {
-	border-top: 1px solid #e30a17;
+	border-top: 1px solid #c51623;
 	padding: 6px 0;
 	padding: 0.6rem 0;
 }
@@ -595,24 +595,30 @@ img.alignnone {
 
 img.alignleft,
 .wp-caption.alignleft {
-	margin: 0 24px 24px 0;
-	margin: 0 2.4rem 2.4rem 0;
+	margin: 0 10px 10px 0;
+	margin: 0 1rem 1rem 0;
 }
 
 img.alignright,
 .wp-caption.alignright {
-	margin: 0 0 24px 24px;
-	margin: 0 0 2.4rem 2.4rem;
+	margin: 0 0 10px 10px;
+	margin: 0 0 1rem 1rem;
 }
 
 .wp-caption-text {
-	font-size: 14px;
-	font-size: 1.4rem;
+	font-size: 10px;
+	font-size: 1rem;
 	font-weight: 700;
 	text-align: center;
+	margin-top: 20px;
+	font-family: 'raleway';
+	font-weight: 100;
 }
 
 .gallery-caption {
+	margin-top: 20px;
+	font-family: 'raleway';
+	font-weight: 100;
 }
 
 .widget_calendar table {
@@ -680,12 +686,12 @@ img.alignright,
 	line-height: 1;
 	font-family: 'Raleway';
 	font-weight: 100;
-		color: #e30513;
+		color: #c51623;
 }
 
 .entry-title a,
 .sidebar .widget-title a {
-	color: #e30513;
+	color: #c51623;
 }
 
 .entry-title a:hover {
@@ -893,7 +899,7 @@ Site Header
 
 .header-image .site-title a {
 	float: left;
-	min-height: 200px;
+	min-height: 150px;
 	width: 100%;
 }
 
@@ -946,7 +952,6 @@ Site Navigation
 	padding: 28px 24px;
 	padding: 2rem 2.4rem;
 	position: relative;
-	font-size: 20px;
 	font-size: 2rem;
 }
 
@@ -958,7 +963,6 @@ Site Navigation
 	padding: 28px 24px;
 	padding: 2rem 0 2rem 0;
 	position: relative;
-	font-size: 15px;
 	font-size: 1.5rem;
 	text-align: left;
 }
@@ -967,11 +971,12 @@ Site Navigation
 .genesis-nav-menu a:hover,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	 color: #E30A17;
+	 color: #c51623;
+	  text-decoration: none;
 }
 
 .genesis-nav-menu .sub-menu .current-menu-item > a {
-	 color: #E30A17;
+	 color: #c51623;
 }
 
 .genesis-nav-menu > .menu-item > a {
@@ -1063,22 +1068,22 @@ Site Navigation
 --------------------------------------------- */
 
 .nav-primary {
-	background: url("http://lisarobbinyoung.com/staging/wp-content/themes/Lisa-Robbin-Young/images/nav.png");
+	background: url("http://lisarobbinyoung.com/staging/wp-content/themes/Lisa-Robbin-Young/images/form_bg.png");
   	height:80px;
-  	-webkit-box-shadow: 0 8px 6px -8px black;
-	   -moz-box-shadow: 0 8px 6px -8px black;
-	        box-shadow: 0 8px 6px -8px black;
-	        border-bottom: 1px solid #000;
 }
 
 .nav-primary a:hover,
 .nav-primary .current-menu-item > a {
-	color: #fff;
+	color: #c51623;
+	border-bottom:none;
+	text-decoration: none;
 }
 
 .nav-primary .sub-menu a:hover {
-	color: #333;
+	color: #c51623;
+	border-bottom:none;
 }
+
 
 /* Secondary Navigation
 --------------------------------------------- */
@@ -1103,12 +1108,13 @@ Content Area
 }
 
 .entry-content a {
-	border-bottom: 1px solid #ddd;
-	color: #f15123;
+	border-bottom: none;
+	color: #c51522;
 }
 
 .entry-content a:hover {
 	color: #333;
+	border-bottom:none;
 }
 
 .entry-content .attachment a,
@@ -1146,6 +1152,15 @@ Content Area
 	width: 50%;
 }
 
+.entry-content h2{
+	font-family: 'Raleway';
+	font-weight: 200;
+	color:#C51522;
+	font-size: 21px;
+	font-size: 2em;
+}
+
+
 .entry-meta {
 	color: #999;
 	font-size: 10px;
@@ -1153,12 +1168,20 @@ Content Area
 }
 
 .entry-meta a {
-	border-bottom: 1px solid #ddd;
+	border-bottom: none;
+}
+
+.entry-header .entry-meta a {
+	border-bottom: none;
+	color:#000;
 }
 
 .entry-header .entry-meta {
 	margin-bottom: 10px;
 	margin-bottom: 1rem;
+	color:#000000;
+  font-family:Raleway;
+  font-weight:bold;
 }
 
 .entry-footer .entry-meta {
@@ -1173,9 +1196,9 @@ margin-top: 20px;
 
 .entry-comments-link a{
 
-	background-color:#E30513;
+	background-color:#c51623;
 	color:#FFF;
-  font-family:'Raleway';
+  font-family:'Lily Script One';
   font-size: 10px;
   font-size:1rem;
   text-align: center;
@@ -1218,7 +1241,7 @@ margin-top: 20px;
 }
 
 .entry-pagination a {
-	border-bottom: 1px solid #ddd;
+	border-bottom: none;
 }
 
 /* Comments
@@ -1232,15 +1255,18 @@ margin-top: 20px;
 	margin-bottom: 4rem;
 }
 
-.entry-comments {
-	padding: 40px;
-	padding: 4rem;
+.entry-comments h3{
+color:#C51522;
+  font-family:'Raleway';
+  ont-size:24px;
+  font-size:2.4rem;
+  font-weight:100;
+  line-height:1;
+
 }
 
 .comment-respond,
 .entry-pings {
-	padding: 40px 40px 16px;
-	padding: 4rem 4rem 1.6rem;
 }
 
 .comment-respond a,
@@ -1259,7 +1285,8 @@ margin-top: 20px;
 .comment-respond input[type="email"],
 .comment-respond input[type="text"],
 .comment-respond input[type="url"] {
-	width: 50%
+	width: 50%;
+	height:50px;
 }
 
 .comment-respond label {
@@ -1276,8 +1303,13 @@ margin-top: 20px;
 .comment-list li {
 	margin-top: 24px;
 	margin-top: 2.4rem;
-	padding: 32px;
-	padding: 3.2rem;
+	padding: 10px;
+	padding: 1rem;
+	-webkit-box-shadow: 0 8px 6px -6px #f5f5f5;
+	   -moz-box-shadow: 0 8px 6px -6px #f5f5f5;
+	        box-shadow: 0 8px 6px -6px #f5f5f5;
+	        border: 1px solid #f5f5f5;
+	        border-right: none;
 }
 
 .comment-list li li {
@@ -1286,9 +1318,7 @@ margin-top: 20px;
 }
 
 li.comment {
-	background-color: #f5f5f5;
-	border: 2px solid #fff;
-	border-right: none;
+
 }
 
 .comment .avatar {
@@ -1321,7 +1351,8 @@ Sidebars
 }
 
 .sidebar a {
-	border-bottom: 1px solid #ddd;
+
+
 }
 
 .sidebar p:last-child {
@@ -1430,7 +1461,7 @@ Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-	background-color: #e30a17;
+	background-color: #c51623;
 	color: #fff;
 	font-family: 'raleway';
 	font-size: 10px;
@@ -1455,7 +1486,11 @@ Custom CSS
 */
 
 body.home{
-	background: url("http://lisarobbinyoung.com/staging/wp-content/themes/Lisa-Robbin-Young/images/bg.png") #FFF repeat-x;
+	background: url("http://lisarobbinyoung.com/staging/wp-content/themes/Lisa-Robbin-Young/images/bg.png") no-repeat scroll 0 0 #FFFFFF;
+}
+
+body.blog{
+	background: #FFF;
 }
 
 .home article{
@@ -1463,9 +1498,12 @@ body.home{
 	padding:0;
 }
 
-
 .no-nav-primary .nav-primary{
 	display: none !important;
+}
+
+.blog .container{
+background: #FFF;
 }
 
 .home .nav-secondary{
@@ -1496,7 +1534,7 @@ body.home{
     font-size: 20px;
     font-size: 2rem;
     font-weight: 100;
-    margin: 0 0 10px;
+   margin: 0;
     padding: 10px 0;
     text-align: center;
     width: 100%;
@@ -1508,8 +1546,8 @@ body.home{
 
 .site-header{
 	background: url("http://lisarobbinyoung.com/staging/wp-content/themes/Lisa-Robbin-Young/images/blogheadr@2x.jpg") no-repeat;
-	background-size:1540px 200px;
-	height: 200px;
+	background-size:100%;
+	 height: 180px;
 }
 
 .home .site-inner {
@@ -1559,8 +1597,8 @@ body.home{
 
 #top-hero-widget{
 	margin-top: 80px;
-	margin-bottom: 120px;
-	margin-right:200px;
+	margin-bottom: 100px;
+	margin-right:100px;
 }
 
 #top-hero-widget-mobile{
@@ -1578,7 +1616,7 @@ body.home{
 }
 
 #top-hero-widget .top-widget-tablet p{
-	font-size: 10px;
+	font-weight: 10px;
 	font-size: 1rem;
 	color:#FFF;
 	font-family: 'Raleway';
@@ -1588,7 +1626,7 @@ body.home{
 #top-hero-widget .top-widget-mobile h2{
 font-family: 'Lily Script One';
 color:#FFF;
-font-size: 30px;
+font-size:30px;
 font-size: 3rem;
 line-height: 50px;
 text-align: center;
@@ -1649,7 +1687,7 @@ color: #FFFFFF;
 }
 
 #mc_embed_signup1 #mc-embedded-subscribe button, #mc_embed_signup1 input[type="button"], #mc_embed_signup1 input[type="reset"], #mc_embed_signup1 input[type="submit"], #mc_embed_signup1 .button, #mc_embed_signup1 .entry-content .button {
-	background: #e30513;
+	background: #c51623;
 	font-family: 'raleway';
 	font-size: 20px;
     font-size: 2rem;
@@ -1659,7 +1697,7 @@ color: #FFFFFF;
 	font-family: 'raleway';
 	font-size: 20px;
     font-size: 2rem;
-    color: #e30513;
+    color: #c51623;
 	}
 
 #mc_embed_signup2{
@@ -1683,7 +1721,7 @@ color: #FFFFFF;
 }
 
 #mc_embed_signup2 #mc-embedded-subscribe button, #mc_embed_signup2 input[type="button"], #mc_embed_signup2 input[type="reset"], #mc_embed_signup2 input[type="submit"], #mc_embed_signup2 .button, #mc_embed_signup2 .entry-content .button {
-	background: #e30513;
+	background: #c51623;
 	font-family: 'raleway';
 	font-size: 20px;
     font-size: 2rem;
@@ -1694,7 +1732,7 @@ color: #FFFFFF;
 	font-family: 'raleway';
 	font-size: 20px;
     font-size: 2rem;
-    color: #e30513;
+    color: #c51623;
 	}
 
 #mc_embed_signup3{
@@ -1718,7 +1756,7 @@ color: #FFFFFF;
 }
 
 #mc_embed_signup3 #mc-embedded-subscribe button, #mc_embed_signup3 input[type="button"], #mc_embed_signup3 input[type="reset"], #mc_embed_signup3 input[type="submit"], #mc_embed_signup3 .button, #mc_embed_signup3 .entry-content .button {
-	background: #e30513;
+	background: #c51623;
 	font-family: 'raleway';
 	font-size: 10px;
     font-size: 1rem;
@@ -1729,7 +1767,7 @@ color: #FFFFFF;
 	font-family: 'raleway';
 	font-size: 10px;
     font-size: 1rem;
-    color: #e30513;
+    color: #c51623;
 	}
 
 
@@ -1753,7 +1791,7 @@ color: #FFFFFF;
 }
 
 #mc_embed_signup4 #mc-embedded-subscribe button, #mc_embed_signup4 input[type="button"], #mc_embed_signup4 input[type="reset"], #mc_embed_signup4 input[type="submit"], #mc_embed_signup4 .button, #mc_embed_signup4 .entry-content .button {
-	background: #e30513;
+	background: #c51623;
 	font-family: 'raleway';
 	font-size: 20px;
     font-size: 2rem;
@@ -1764,7 +1802,7 @@ color: #FFFFFF;
 	font-family: 'raleway';
 	font-size: 20px;
     font-size: 2rem;
-    color: #e30513;
+    color: #c51623;
 	}
 
 #mc_embed_signup4 label{
@@ -1775,7 +1813,7 @@ color: #FFFFFF;
 .members_button{
 	font-family: 'Raleway';
 	color:#FFF;
-	background: #e30513;
+	background: #c51623;
 	padding: 15px;
 	text-align: center;
 	font-size: 21px;
@@ -1786,11 +1824,12 @@ color: #FFFFFF;
 .genesis-nav-menu .members_button_blog a{
 	font-family: 'Raleway';
 	color:#FFF;
-	background: #e30513;
+	background: #c51623;
 	text-align: center;
 	font-size: 10px;
 	font-size: 1rem;
 	margin-top: 20px;
+	margin-left:-20px;
 	padding:10px;
 	float:right;
 }
@@ -1802,7 +1841,7 @@ color: #FFFFFF;
 .tribe-events-widget-link{
 	font-family: 'Raleway';
 	color:#FFF;
-	background: #e30513;
+	background: #c51623;
 	padding: 15px;
 	text-align: center;
 	font-size: 21px;
@@ -1814,7 +1853,7 @@ color: #FFFFFF;
 a.members_button_mobile{
 	font-family: 'Raleway';
 	color:#FFF;
-	background: #e30513;
+	background: #c51623;
 	padding: 10px;
 	text-align: center;
 	font-size: 21px;
@@ -1837,7 +1876,7 @@ a.members_button_mobile{
 
 #doc h3{
 font-family: 'Raleway';
-color:#e30a17;
+color:#c51623;
 font-weight: 100;
 margin-top: 2px;
 text-align: center;
@@ -1858,7 +1897,7 @@ text-align: center;
 ________________________________________________________________________________*/
 
 #booklisa{
-	background: #e30513;
+	background: #c51623;
 	margin-top: 10px;
 	height:300px;
 	text-align: center;
@@ -1891,13 +1930,25 @@ ________________________________________________________________________________
 	font-family: 'Raleway';
 	color:#FFF;
 	text-decoration: none;
-	border: none;
+	border-bottom: none;
 	font-size: 6rem;
 	font-size: 60px;
 	margin-right:100px; 
 	padding: 40px 0 0;
 
 	}
+
+	.home-listen a:hover{
+		font-family: 'Raleway';
+	color:#c51623;
+	text-decoration: none;
+	border-bottom: none;
+	font-size: 6rem;
+	font-size: 60px;
+	margin-right:100px; 
+	padding: 40px 0 0;
+}	
+
 
 .home-listen2{	
 	border: none;
@@ -1908,10 +1959,7 @@ ________________________________________________________________________________
 	margin-bottom:15px;
 	}
 
-.home-listen a:hover{
-	color:#e30513;
-	border:none;
-}	
+
 
 #aboutlisa{
 	background: url("http://lisarobbinyoung.com/staging/wp-content/themes/Lisa-Robbin-Young/images/aboutbg.png") no-repeat;
@@ -1931,7 +1979,7 @@ ________________________________________________________________________________
 	}
 
 #aboutlisa a:hover{
-	color:#e30513;
+	color:#c51623;
 	border:none;
 }
 
@@ -1942,7 +1990,6 @@ ________________________________________________________________________________
 }
 
 #lisablog a{
-	font-size: 40px;
 	font-size: 4rem;
 	color:#000;
 	text-decoration: none;
@@ -1951,7 +1998,7 @@ ________________________________________________________________________________
 	}
 
  #lisablog a:hover{
-	color:#e30513;
+	color:#c51623;
 	border:none;
 }
 
@@ -1989,42 +2036,48 @@ body.lry-landing {
    display: none !important;
 }
 /**** Share Icons in Post-Info *******************/
- 
-/* Tweet Share Button */
-div .tweet {
- float: right;
- width: 95px;
-}
- 
-/* Google +1 Button */
-div .plusone {
- float: right;
- width: 87px;
-}
- 
-/* Facebook Like Button */
-div .fb-like {
- float: right;
- width: 90px;
+.sd-title{
+	display:none;
 }
 
-/* Pinterest Button */
-div .pinterest-button {
-	background: 
- float: right;
- width: 80px;
+.sharedaddy{
+	float:right;
+}
+
+.sd-content ul li{
+	list-style-type: none;
+	width:36px;
+	height:36px;
 }
 
 
-
-.all-buttons{
-	 float: left;
-     margin-top: 20px;
-    width: 50%;
+.wpcf7-form p{
+font-family: 'Raleway';
+font-size: 21px;
+font-size: 2em;
+margin-bottom: 10px;
 }
 
+.wpcf7-textarea{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 
+.wpcf7-text{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 
+.wpcf7 input, .wpcf7 textarea, .wpcf7 .uneditable-input {
+  margin-left:0;
+  min-height:50px;
+  width:100%;
+}
+
+div.wpcf7 {
+  margin:50px 0 0 0;
+  padding:0;
+}
 
 /*
 Media Queries
@@ -2185,14 +2238,13 @@ Media Queries
 	#top-hero-widget{
 	margin-top: 50px;
 	margin-bottom: 10px;
-	margin-right: 0;
+	margin-right:0;
 }
 
 .members_button {
-    background: none repeat scroll 0 0 #E30513;
+    background: none repeat scroll 0 0 #c51623;
     color: #FFFFFF;
     font-family: 'Raleway';
-    font-size: 10px;
     font-size: 1rem;
     margin-right: 20px;
     padding: 20px 10px;
@@ -2273,7 +2325,6 @@ Media Queries
     background: none repeat scroll 0 0 #000000;
     color: #FFFFFF;
     font-family: 'raleway';
-    font-size: 20px;
     font-size: 2rem;
     font-weight: 100;
     text-align: center;
@@ -2298,7 +2349,6 @@ Media Queries
 		content: '\2630';
 		font-weight: bold;
 		letter-spacing: 1px;
-		font-size: 20px;
 		font-size: 2rem;
 	}
 	
@@ -2325,7 +2375,7 @@ Media Queries
 	ul#menu-secondary-navigation li a{
 		text-align: center;
 		color:#FFF;
-		background: #e30a17;
+		background: #c51623;
 		padding:10px;
 	}
 
@@ -2339,12 +2389,13 @@ Media Queries
 @media (max-width: 600px) { 
 	#top-hero-widget {
 		padding:200px 20px 0px 20px;
+
+		margin-right:0;
 	}
 
-#top-hero-widget {
+	#top-hero-widget {
     margin-bottom: 0;
     margin-top: 0;
-    margin-right:0;
 }
 
 	.home .site-inner{
@@ -2382,7 +2433,7 @@ Media Queries
 		padding:200px 20px 0px 20px;
 	}
 
-#top-hero-widget {
+	#top-hero-widget {
     margin-bottom: 0;
     margin-top: 0;
     margin-right:0;
@@ -2423,12 +2474,14 @@ Media Queries
 		padding:200px 20px 0px 20px;
 	}
 
-#top-hero-widget {
+	#top-hero-widget {
     margin-bottom: 0;
     margin-top: 0;
     margin-right:0;
 }
+
 	.home .site-inner{
+		padding-top: 10px;
 		padding-top: 1rem;
 	}
 
@@ -2472,11 +2525,6 @@ Media Queries
     min-height: 120px;
     width: 100%;
 }
-#top-hero-widget {
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-right:0;
-}
 
  }
 
@@ -2495,11 +2543,6 @@ Media Queries
     min-height: 100px;
     width: 100%;
 }
-#top-hero-widget {
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-right:0;
-}
 }
 
 
@@ -2516,10 +2559,5 @@ height: 70px;
     float: left;
     min-height: 75px;
     width: 100%;
-}
-#top-hero-widget {
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-right:0;
 }
 }

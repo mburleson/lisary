@@ -231,7 +231,7 @@ body {
 }
 
 a {
-  color: #0088cc;
+  color: #c51623;
   text-decoration: none;
 }
 
@@ -773,6 +773,9 @@ h2 {
 
 h3 {
   font-size: 24.5px;
+  font-family: 'Raleway';
+  font-weight: 100;
+  color:#c51522;
 }
 
 h4 {
@@ -983,7 +986,6 @@ pre {
 code {
   padding: 2px 4px;
   color: #d14;
-  white-space: nowrap;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
 }
@@ -1111,6 +1113,7 @@ textarea,
 
 textarea {
   height: auto;
+  width:100%;
 }
 
 textarea,
