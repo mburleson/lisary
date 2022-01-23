@@ -8,15 +8,26 @@
 
 <h3>Special Features:</h3>
 <ul>
-<li>Lead Generation</li>
+<li>Landing Page Template</li>
 <li>Blog template</li>
 <li>Event Calendar</li>
 </ul>
 
-<h3>Technologies:</h3>
+<h3>Skills</h3>
 <ul>
   <li>HTML</li>
   <li>CSS</li>
+  <li>Adobe PhotoShop</li>
+  <li>Adobe Illustrator</li>
   <li>WordPress</li>
   <li>StudioPress theme (Genesis)</li>
 </ul>
+
+***
+
+
+<img src="https://github.com/mburleson/lisary/blob/master/screenshot-lisarobbinyoung-com-2015-04-09-20-03-59.png" width="50%"/>
+
+<img src="https://github.com/mburleson/lisary/blob/master/screenshot-lisarobbinyoung%20com%202015-03-05%2023-32-43.png" width="50%"/>
+
+
