@@ -26,8 +26,7 @@
 ***
 
 
-<img src="https://github.com/mburleson/lisary/blob/master/screenshot-lisarobbinyoung-com-2015-04-09-20-03-59.png" width="50%"/>
+<img src="https://github.com/mburleson/lisary/blob/master/LisaRobbinYound.png" />
 
-<img src="https://github.com/mburleson/lisary/blob/master/screenshot-lisarobbinyoung%20com%202015-03-05%2023-32-43.png" width="50%"/>
 
 
